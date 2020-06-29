@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="안녕하세요"
+        android:textSize="20sp"
+        android:background="@color/fabColor"
+        android:layout_gravity="top|center"
+        android:textColor="#000000"
+
+        />
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/goMyLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="15sp"
+        app:backgroundTint="@color/fabColor"
+        android:src="@drawable/target" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/goHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="15sp"
+        android:layout_marginEnd="15sp"
+        android:layout_marginBottom="90sp"
+        app:backgroundTint="@color/fabColor"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        android:src="@drawable/living"
+        />
+
+    <Button
+        android:id="@+id/btn_Academy"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom|end"
+        android:background="#FFFFFF"
+        android:text="열기"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/page"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/academyPicture"
+            android:layout_width="match_parent"
+            android:layout_height="247dp" />
+
+        <TextView
+            android:id="@+id/academyName"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:background="@drawable/back"
+            android:text="학원 이름"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/academyAddr"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:background="@drawable/back"
+            android:text="위치 : 학원 위치"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/academyTime"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@drawable/back"
+            android:text="오전반 : 10시 30분 ~ 11시 30분\n오후반 : 15시30분 ~ 17시 00분 "
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/academyGuide"
+            android:background="@drawable/back"
+            android:textSize="20sp"
+            android:text="방식 : 개인지도"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:background="@drawable/back"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="가격 : 60000원"
+                android:id="@+id/academyPrice"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="신청하기"
+                android:layout_marginLeft="130sp"
+                android:id="@+id/academyBooking"
+                android:backgroundTint="#4488FF"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

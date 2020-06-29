@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="35dip"
+    android:paddingLeft="10dip"
+    android:minWidth="200dip"
+    android:id="@+id/ballon_overlay"
+    android:paddingTop="0dip"
+    android:paddingRight="0dip"
+    android:background="@drawable/custom_callout_balloon"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:paddingTop="10dip"
+        android:id="@+id/balloon_inner"
+        >
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:id="@+id/balloon_title"
+            android:text="balloon_title"
+            android:textSize="16dip"
+            android:textColor="#FF000000"
+            android:layout_width="wrap_content"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/balloon_snip"
+            android:text="balloon_snip"
+            android:textSize="12dip"
+            ></TextView>
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/go_button"
+        android:id="@+id/btn_GoAcademy"
+        android:paddingLeft="10dip"
+        android:paddingBottom="10dip"
+        android:paddingRight="8dip"
+        android:paddingTop="8dip"
+        ></ImageButton>
+
+
+</LinearLayout>

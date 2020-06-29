@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:text="학원"
+        android:layout_marginTop="20sp"
+        android:id="@+id/academyName"/>
+
+
+    <CalendarView
+        android:id="@+id/calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/academyName"
+        android:layout_marginTop="-9dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/calendar"
+        android:id="@+id/selectAcademy"
+        >
+
+        <RadioGroup
+            android:id="@+id/rg_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rb1"
+                android:layout_marginLeft="100sp"
+                android:text="오전반" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rb2"
+                android:layout_marginLeft="50sp"
+                android:text="오후반" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bookingDate"
+        android:text="예약현황"
+        android:layout_below="@+id/selectAcademy"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bookingTime"
+        android:text="예약현황"
+        android:layout_below="@+id/bookingDate"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        android:textAlignment="center"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bookingTime"
+        android:text="신청하기"
+        android:id="@+id/requestAcademy"
+        android:textSize="46sp" />
+
+
+</RelativeLayout>

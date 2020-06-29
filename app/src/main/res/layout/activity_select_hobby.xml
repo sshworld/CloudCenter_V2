@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/hobby"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RadioButton
+                android:id="@+id/cook"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_weight="4"
+                android:button="@drawable/radio_button_cook_checked"
+                android:orientation="horizontal" />
+
+            <RadioButton
+                android:id="@+id/art"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_weight="4"
+                android:button="@drawable/radio_button_art_checked"
+                android:orientation="horizontal" />
+
+            <RadioButton
+                android:id="@+id/music"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_weight="4"
+                android:button="@drawable/radio_button_music_checked"
+                android:orientation="horizontal" />
+
+            <RadioButton
+                android:id="@+id/sport"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_weight="4"
+                android:button="@drawable/radio_button_sport_checked"
+                android:orientation="horizontal" />
+            <Button
+                android:id="@+id/selectClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:text ="선택완료"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <ListView
+
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:choiceMode="multipleChoice"
+        android:background="#EFF1F3" />
+
+</LinearLayout>
